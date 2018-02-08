@@ -1,0 +1,23 @@
+.show {
+  display: inline-block;
+  width: 50px;
+  height: 100px;
+  background-color: yellow;
+  color: red;
+  overflow: hidden;
+}
+
+.show-list {
+  margin-top: -100px;
+  transition: margin-top 1s;
+}
+
+.number {
+  width: 50px;
+  height: 100px;
+  background-color: yellow;
+  color: red;
+  font-size: 2.8rem;
+  line-height: 100px;
+  text-align: center;
+}

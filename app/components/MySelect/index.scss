@@ -1,0 +1,91 @@
+.my-select {
+  position: relative;
+
+  width: 6rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  text-indent: .3rem;
+  color: #fff;
+  font-size: .75rem;
+  background-color: #050a1d;
+  border: 1px solid #0b5b6b;
+  cursor: pointer;
+  outline: none;
+  -moz-box-sizing: content-box!important;
+  -webkit-box-sizing: content-box!important;
+  box-sizing: content-box!important;
+  >span {
+    display: inline-block;
+    width: 5rem;
+    height: 1.7rem;
+  }
+}
+
+.top-after::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: .4rem solid transparent;
+  border-right: .4rem solid transparent;
+  border-top: .4rem solid #0b5b6b;
+  position: absolute;
+  right: .25rem;
+  top: .6rem;
+  -moz-box-sizing: content-box!important;
+  -webkit-box-sizing: content-box!important;
+  box-sizing: content-box!important;
+}
+
+.bottom-after::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: .4rem solid transparent;
+  border-right: .4rem solid transparent;
+  border-bottom: .4rem solid #0b5b6b;
+  position: absolute;
+  right: .25rem;
+  top: .6rem;
+  -moz-box-sizing: content-box!important;
+  -webkit-box-sizing: content-box!important;
+  box-sizing: content-box!important;
+}
+
+.select-content {
+  position: absolute;
+  left: -.05rem;
+  top: 1.7rem;
+  width: 6rem;
+  border: 1px solid #0b5b6b;
+  background-color: #050a1d;
+  z-index: 999;
+  -moz-box-sizing: content-box!important;
+  -webkit-box-sizing: content-box!important;
+  box-sizing: content-box!important;
+  >ul {
+    margin: 0 auto;
+    padding: .2rem;
+    -moz-box-sizing: content-box!important;
+    -webkit-box-sizing: content-box!important;
+    box-sizing: content-box!important;
+    >li {
+      width: 5.6rem;
+      height: 1.3rem;
+      color: #fff;
+      font-size: .75rem;
+      line-height: 1.3rem;
+      text-align: center;
+      background-color: #050a1d;
+      -moz-box-sizing: content-box!important;
+      -webkit-box-sizing: content-box!important;
+      box-sizing: content-box!important;
+      &:hover {
+        cursor: pointer;
+        background-color: #07a9b6;
+        -moz-box-sizing: content-box!important;
+        -webkit-box-sizing: content-box!important;
+        box-sizing: content-box!important;
+      }
+    }
+  }
+}

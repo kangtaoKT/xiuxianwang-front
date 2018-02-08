@@ -1,0 +1,28 @@
+
+.xianyuan {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  .header {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+  }
+  .select {
+    width: 150px;
+    height: 50px;
+    margin-left: 500px;
+    margin-top: 200px;
+  }
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+}
