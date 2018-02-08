@@ -1,6 +1,5 @@
 .my-select {
   position: relative;
-
   width: 6rem;
   height: 1.7rem;
   line-height: 1.7rem;
@@ -11,10 +10,10 @@
   border: 1px solid #0b5b6b;
   cursor: pointer;
   outline: none;
-  -moz-box-sizing: content-box!important;
-  -webkit-box-sizing: content-box!important;
-  box-sizing: content-box!important;
-  >span {
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+  > span {
     display: inline-block;
     width: 5rem;
     height: 1.7rem;
@@ -31,9 +30,9 @@
   position: absolute;
   right: .25rem;
   top: .6rem;
-  -moz-box-sizing: content-box!important;
-  -webkit-box-sizing: content-box!important;
-  box-sizing: content-box!important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
 }
 
 .bottom-after::after {
@@ -46,9 +45,9 @@
   position: absolute;
   right: .25rem;
   top: .6rem;
-  -moz-box-sizing: content-box!important;
-  -webkit-box-sizing: content-box!important;
-  box-sizing: content-box!important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
 }
 
 .select-content {
@@ -59,15 +58,15 @@
   border: 1px solid #0b5b6b;
   background-color: #050a1d;
   z-index: 999;
-  -moz-box-sizing: content-box!important;
-  -webkit-box-sizing: content-box!important;
-  box-sizing: content-box!important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
   >ul {
     margin: 0 auto;
     padding: .2rem;
-    -moz-box-sizing: content-box!important;
-    -webkit-box-sizing: content-box!important;
-    box-sizing: content-box!important;
+    -moz-box-sizing: content-box !important;
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
     >li {
       width: 5.6rem;
       height: 1.3rem;
@@ -76,15 +75,15 @@
       line-height: 1.3rem;
       text-align: center;
       background-color: #050a1d;
-      -moz-box-sizing: content-box!important;
-      -webkit-box-sizing: content-box!important;
-      box-sizing: content-box!important;
+      -moz-box-sizing: content-box !important;
+      -webkit-box-sizing: content-box !important;
+      box-sizing: content-box !important;
       &:hover {
         cursor: pointer;
         background-color: #07a9b6;
-        -moz-box-sizing: content-box!important;
-        -webkit-box-sizing: content-box!important;
-        box-sizing: content-box!important;
+        -moz-box-sizing: content-box !important;
+        -webkit-box-sizing: content-box !important;
+        box-sizing: content-box !important;
       }
     }
   }

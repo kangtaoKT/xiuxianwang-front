@@ -1,100 +1,100 @@
 .login {
-    width: 100%;
-    height: 100vh;
-    position:fixed;
-    background: url("../images/bg/login.jpg") no-repeat;
-    background-size: 100% 100%;
-    /*background-color: #466079;*/
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: url("../images/bg/login.jpg") no-repeat;
+  background-size: 100% 100%;
+  /*background-color: #466079;*/
 }
 
 .login-left {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
 }
 
-.login-left-top span:first-child{
-    display: inline-block;
-    margin: 23px 0 0 74px;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background-color: #FF0000;
+.login-left-top span:first-child {
+  display: inline-block;
+  margin: 23px 0 0 74px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #FF0000;
 }
 
 .login-left-top span:last-child {
-    display: inline-block;
-    margin-top: 23px;
-    height: 46px;
-    line-height: 46px;
-    text-indent: 7px;
-    font-size: 22px;
-    color: #FF0000;
-    font-weight: 800;
-    vertical-align: top;
+  display: inline-block;
+  margin-top: 23px;
+  height: 46px;
+  line-height: 46px;
+  text-indent: 7px;
+  font-size: 22px;
+  color: #FF0000;
+  font-weight: 800;
+  vertical-align: top;
 }
 
 .login-left-middle {
-    margin: 126px 0 0 74px;
-    padding:2px 0 14px 10px;
-    height: 92px;
-    border-left: 2px solid #fff;
+  margin: 126px 0 0 74px;
+  padding: 2px 0 14px 10px;
+  height: 92px;
+  border-left: 2px solid #fff;
 }
 
 .login-left-middle p:nth-child(1) {
-    font-size: 26px;
-    margin-bottom: 8px;
-    color: #fff;
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #fff;
 }
 
 .login-left-middle p:nth-child(2) {
-    font-size: 15px;
-    margin-bottom: 20px;
-    color: #fff;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .login-left-middle p:nth-child(3) {
-    font-size: 12px;
-    color: #afc24f;
+  font-size: 12px;
+  color: #afc24f;
 }
 
 .login-right {
-    display: inline-block;
-    width: 50%;
-    margin: 86px 0 0 0;
+  display: inline-block;
+  width: 50%;
+  margin: 86px 0 0 0;
 }
 
 .login-right-content {
-    width: 320px;
-    height: 385px;
-    background-color: #f6d76d;
+  width: 320px;
+  height: 385px;
+  background-color: #f6d76d;
 }
 
 .login-right-content li {
-    margin-bottom: 11px;
-    text-align: center;
+  margin-bottom: 11px;
+  text-align: center;
 }
 
 .login-right-content li:nth-child(1) {
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    font-size: 28px;
-    color: #094d72;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 28px;
+  color: #094d72;
 }
 
 .login-right-content li:last-child {
-    margin: 0 auto;
-    width: 262px;
-    height: 38px;
-    line-height: 38px;
-    text-align: center;
-    background-color: #304e72;
-    font-size: 14px;
-    color: #fff;
+  margin: 0 auto;
+  width: 262px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background-color: #304e72;
+  font-size: 14px;
+  color: #fff;
 }
 
 .login-right-content input {
-    width: 262px;
-    height: 38px;
+  width: 262px;
+  height: 38px;
 }
