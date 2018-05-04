@@ -19,7 +19,7 @@
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background-color: #FF0000;
+  background-color: rgba(255,255,255,.3);
 }
 
 .login-left-top span:last-child {
@@ -29,7 +29,7 @@
   line-height: 46px;
   text-indent: 7px;
   font-size: 22px;
-  color: #FF0000;
+  color: rgba(255,255,255,.3);
   font-weight: 800;
   vertical-align: top;
 }
@@ -67,7 +67,7 @@
 .login-right-content {
   width: 320px;
   height: 385px;
-  background-color: #f6d76d;
+  background-color: rgba(255,255,255,.3);
 }
 
 .login-right-content li {

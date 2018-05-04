@@ -30,7 +30,6 @@ class Login extends Component {
                         <li>欢迎登录</li>
                         <li><input placeholder="请输入用户名" /></li>
                         <li><input placeholder="请输入密码" /></li>
-                        <li><input placeholder="请再次输入密码" /></li>
                         <li>立即登录</li>
                     </ul>
                 </div>
