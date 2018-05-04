@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import * as d3 from 'd3'
-import MySelect from '../components/MySelect'
+import MySelect from '../components/MySelect/index.jsx'
 import style from './index.scss'
 
 console.log(d3)

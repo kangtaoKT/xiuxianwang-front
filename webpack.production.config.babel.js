@@ -2,7 +2,7 @@ import path from 'path'
 import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin' // 处理 html 的插件
 import CleanWebpackPlugin from 'clean-webpack-plugin' // 清理文件夹
-import ExtractTextPlugin from 'extract-text-webpack-plugin-2' // 提取 css，此插件的 1.0.0 版本不能在 webpack2 中使用，请使用该插件的 2.0.0 版本
+import ExtractTextPlugin from 'extract-text-webpack-plugin' // 提取 css，此插件的 1.0.0 版本不能在 webpack2 中使用，请使用该插件的 2.0.0 版本
 import precss from 'precss' // 提供在 CSS 文件中使用 Sass 类型 Markup 的支持
 import autoprefixer from 'autoprefixer' // 自动补全浏览器前缀的插件
 
@@ -17,7 +17,7 @@ export default {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         include: [
           path.resolve(__dirname, 'app')
         ],
@@ -28,16 +28,41 @@ export default {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader!postcss-loader' })
+        // loader: 'style-loader!css-loader!postcss-loader'
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: ['css-loader']
+        })
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'url-loader?limit=10000&name=[name]-[hash].[ext]'
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          //resolve-url-loader may be chained before sass-loader if necessary
+          // use: ['css-loader', 'sass-loader']
+          use: ['css-loader?modules&localIdentName=[local]_[hash:base64:6]', 'postcss-loader', 'sass-loader', 'resolve-url-loader', 'sass-loader?sourceMap']
+        })
+      },
+      //{
+      //  test: /\.(png|jpg|gif|svg)$/,
+      //  loader: 'url-loader?limit=10000&name=[name]-[hash].[ext]'
+      //},
+      {
+        test: /\.(woff|woff2|ttf|svg|eot)(\?t=[\s\S]+)?$/,
+        use: ['url-loader?limit=1000&name=files/[md5:hash:base64:10].[ext]']
       },
       {
-        test: /\.html?$/,
-        loader: 'file?name=html/[name].[ext]'
+        test: /\.(jpg|png|gif|swf)$/,
+        use: ['url-loader?limit=1000&name=files/[md5:hash:base64:10].[ext]']
+      },
+      {
+        test: /\.json$/,
+        use: ['json-loader']
       }
+      //{
+      //  test: /\.html?$/,
+      //  use: 'file-loader?name=html/[name].[ext]'
+      //}
     ]
   },
 
