@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import '../login/index.css'
 import resource from '../util/resource'
+import createHistory from 'history/createHashHistory'
+const history = createHistory();
 // import axios from 'axios'
 
 class Register extends Component {
@@ -42,18 +44,22 @@ class Register extends Component {
         }
     }
 
+    back = () => {
+      history.push('/');
+    };
+
     render() {
         return (
             <div className='login'>
                 <div className="login-left">
                     <p className="login-left-top">
-                        <span></span>
+                        <span title='回到起点' onClick={this.back}></span>
                         <span>仙风侠骨</span>
                     </p>
                     <div className="login-left-middle">
-                        <p>遇见最美的自己</p>
-                        <p>To meet the most beautiful yourself</p>
-                        <p>Record ></p>
+                      <p>天下客</p>
+                      <p>缘起随风</p>
+                      <p>问道漫飞花 ></p>
                     </div>
                 </div>
                 <div className="login-right">

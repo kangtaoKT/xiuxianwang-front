@@ -19,7 +19,13 @@
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background-color: rgba(255,255,255,.3);
+  background-color: skyblue;
+  box-shadow: 0 0 15px #afc24f;
+  cursor: pointer;
+}
+
+.login-left-top span:first-child:hover {
+  background-color: deepskyblue;
 }
 
 .login-left-top span:last-child {
@@ -29,28 +35,29 @@
   line-height: 46px;
   text-indent: 7px;
   font-size: 22px;
-  color: rgba(255,255,255,.3);
   font-weight: 800;
   vertical-align: top;
+  color:#1C9F96;
+  text-shadow:1px 1px #BAE6EF,2px 2px #BAE6EF,3px 3px #BAE6EF,4px 4px #BAE6EF,5px 5px #BAE6EF;
 }
 
 .login-left-middle {
   margin: 126px 0 0 74px;
   padding: 2px 0 14px 10px;
   height: 92px;
-  border-left: 2px solid #fff;
+  border-left: 2px solid #094d72;
 }
 
 .login-left-middle p:nth-child(1) {
   font-size: 26px;
   margin-bottom: 8px;
-  color: #fff;
+  color: #094d72;
 }
 
 .login-left-middle p:nth-child(2) {
   font-size: 15px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #094d72;
 }
 
 .login-left-middle p:nth-child(3) {
@@ -84,7 +91,7 @@
 }
 
 .login-right-content li:last-child {
-  margin: 0 auto;
+  margin: 50px auto;
   width: 262px;
   height: 38px;
   line-height: 38px;
