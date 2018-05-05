@@ -13,10 +13,14 @@ class Login extends Component {
       }
     }
     componentDidMount() {
-      resource.get('/api/login?name=ss&password=ss').then((res) => {
-          console.log(res)
-      })
+      window.addEventListener('keydown', this.keyDownLister)
     }
+    keyDownLister = () => {
+      let code = event.keyCode || event.which || event.charCode;
+      if (code == 13) {
+        this.login()
+      }
+    };
     requireLogin = () => {
       let name = this.state.username;
       let psw = this.state.password;
@@ -37,6 +41,16 @@ class Login extends Component {
     back = () => {
       history.push('/');
     };
+    getUserMessage = (e,type) => {
+      this.setState({
+        [type]: e.target.value
+      },() => {
+        console.log('输入信息' + this.state[type])
+      })
+    };
+    componentWillUnmount() {
+      window.removeEventListener('keydown', this.keyDownLister)
+    }
     render() {
         return (
             <div className='login'>
@@ -54,8 +68,8 @@ class Login extends Component {
                 <div className="login-right">
                     <ul className="login-right-content">
                         <li>欢迎登录</li>
-                        <li><input placeholder="请输入用户名" /></li>
-                        <li><input placeholder="请输入密码" /></li>
+                        <li><input type='text' placeholder="请输入用户名" onChange={(event) => {this.getUserMessage(event,'username')}} /></li>
+                        <li><input type='password' placeholder="请输入密码" onChange={(event) => {this.getUserMessage(event,'password')}} /></li>
                         <li onClick={this.login}>立即登录</li>
                     </ul>
                 </div>

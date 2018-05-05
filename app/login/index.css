@@ -99,9 +99,11 @@
   background-color: #304e72;
   font-size: 14px;
   color: #fff;
+  cursor: pointer;
 }
 
 .login-right-content input {
   width: 262px;
   height: 38px;
+  text-indent: 15px;
 }
