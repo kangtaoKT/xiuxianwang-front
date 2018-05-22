@@ -1,19 +1,20 @@
 .my-select {
   position: relative;
-  width: 6rem;
-  height: 1.7rem;
-  line-height: 1.7rem;
+
+  width: 150px;
+  height: 32px;
+  line-height: 32px;
   text-indent: .3rem;
-  color: #fff;
-  font-size: .75rem;
-  background-color: #050a1d;
-  border: 1px solid #0b5b6b;
+  color: #373e4e;
+  background-color: #c9d2db;
+  border: 1px solid #373e4e;
+  border-radius: 16px;
   cursor: pointer;
   outline: none;
-  -moz-box-sizing: content-box !important;
-  -webkit-box-sizing: content-box !important;
-  box-sizing: content-box !important;
-  > span {
+  -moz-box-sizing: content-box!important;
+  -webkit-box-sizing: content-box!important;
+  box-sizing: content-box!important;
+  >span {
     display: inline-block;
     width: 5rem;
     height: 1.7rem;
@@ -24,66 +25,71 @@
   content: '';
   width: 0;
   height: 0;
-  border-left: .4rem solid transparent;
-  border-right: .4rem solid transparent;
-  border-top: .4rem solid #0b5b6b;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #373e4e;
   position: absolute;
-  right: .25rem;
-  top: .6rem;
-  -moz-box-sizing: content-box !important;
-  -webkit-box-sizing: content-box !important;
-  box-sizing: content-box !important;
+  right: 10px;
+  top: 13px;
+  -moz-box-sizing: content-box!important;
+  -webkit-box-sizing: content-box!important;
+  box-sizing: content-box!important;
 }
 
 .bottom-after::after {
   content: '';
   width: 0;
   height: 0;
-  border-left: .4rem solid transparent;
-  border-right: .4rem solid transparent;
-  border-bottom: .4rem solid #0b5b6b;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #373e4e;
   position: absolute;
-  right: .25rem;
-  top: .6rem;
-  -moz-box-sizing: content-box !important;
-  -webkit-box-sizing: content-box !important;
-  box-sizing: content-box !important;
+  right: 10px;
+  top: 13px;
+  -moz-box-sizing: content-box!important;
+  -webkit-box-sizing: content-box!important;
+  box-sizing: content-box!important;
 }
 
 .select-content {
   position: absolute;
-  left: -.05rem;
-  top: 1.7rem;
-  width: 6rem;
-  border: 1px solid #0b5b6b;
-  background-color: #050a1d;
+  left: -1px;
+  top: 35px;
+  width: 150px;
+  border: 1px solid #373e4e;
+  background-color: #c9d2db;
   z-index: 999;
-  -moz-box-sizing: content-box !important;
-  -webkit-box-sizing: content-box !important;
-  box-sizing: content-box !important;
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -moz-box-sizing: content-box!important;
+  -webkit-box-sizing: content-box!important;
+  box-sizing: content-box!important;
   >ul {
-    margin: 0 auto;
-    padding: .2rem;
-    -moz-box-sizing: content-box !important;
-    -webkit-box-sizing: content-box !important;
-    box-sizing: content-box !important;
+    margin-bottom: 0;
+    background-color: #c9d2db;
+    opacity: 1;
+    filter: alpha(opacity=1);
+    -moz-box-sizing: content-box!important;
+    -webkit-box-sizing: content-box!important;
+    box-sizing: content-box!important;
     >li {
-      width: 5.6rem;
-      height: 1.3rem;
-      color: #fff;
-      font-size: .75rem;
-      line-height: 1.3rem;
+      width: 150px;
+      height: 32px;
+      color: #373e4e;
+      line-height: 32px;
       text-align: center;
-      background-color: #050a1d;
-      -moz-box-sizing: content-box !important;
-      -webkit-box-sizing: content-box !important;
-      box-sizing: content-box !important;
+      background-color: #c9d2db;
+      opacity: 1;
+      filter: alpha(opacity=1);
+      -moz-box-sizing: content-box!important;
+      -webkit-box-sizing: content-box!important;
+      box-sizing: content-box!important;
       &:hover {
         cursor: pointer;
-        background-color: #07a9b6;
-        -moz-box-sizing: content-box !important;
-        -webkit-box-sizing: content-box !important;
-        box-sizing: content-box !important;
+        background-color: skyblue;
+        -moz-box-sizing: content-box!important;
+        -webkit-box-sizing: content-box!important;
+        box-sizing: content-box!important;
       }
     }
   }

@@ -117,19 +117,65 @@ export  default class XianYuan extends Component {
     }
 
     drawCicle = () => {
-        let width = Math.max(960, innerWidth),
+      console.log(innerHeight, innerWidth);
+
+      let drag = d3.drag().on("start", function(d){
+
+        console.log("start");
+
+      }).on("end", function(d){
+
+        console.log("end");
+
+      }).on("drag", function(d){
+        d3.select(this)
+          .attr("cx", d.cx = d3.event.x)
+          .attr("cy", d.cy = d3.event.y);
+      });
+
+      let width = Math.max(960, innerWidth),
             height = Math.max(500, innerHeight);
 
-        let i = 0;
+      let circles = [{cx:width/2, cy:height/2, r:30},{cx:250, cy:200, r:30}];
 
-        let svg = d3.select("#xianyuan").append("svg")
+      let i = 0;
+
+
+      let svg = d3.select("#xianyuan").append("svg")
             .attr("width", width)
             .attr("height", height);
+            // .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
 
-        svg.append("rect")
-            .attr("width", width)
-            .attr("height", height)
-            .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
+        svg.append("line")
+          .attr("x1", 250)
+          .attr("y1", 200)
+          .attr("x2", width/2)
+          .attr("y2", height/2)
+          .attr("stroke", "red")
+          .attr("stroke-width", 2);
+        //
+        // svg.append("rect")
+        //   .attr("width", 100)
+        //   .attr("height", 100)
+        //   .style("fill", "orange");
+        //
+        // svg.append("circle")
+        //   .attr("cx", width/2)
+        //   .attr("cy", height/2)
+        //   .attr("r", 100)
+        //   .style("stroke", "red")
+        //   .style("fill", "orange");
+
+        svg.selectAll("circle")
+          .data(circles)
+          .enter()
+          .append("circle")
+          .attr("cx", function(d){ console.log(d); return d.cx;})
+          .attr("cy", function(d){return d.cy;})
+          .attr("r", function(d){return d.r;})
+          .style("stroke", "red")
+          .style("fill", "orange")
+          .call(drag);
 
         function particle() {
             let m = d3.mouse(this);
@@ -153,15 +199,18 @@ export  default class XianYuan extends Component {
 
     render() {
         return (
-            <div id="xianyuan" className={style['xianyuan']}>
+            <div className={style['xianyuan']}>
                 <header className={style.header}>仙缘觅踪</header>
-                <div className={style['select']}>
-                    <MySelect
-                        value={this.state.showText}
-                        options={this.state.options}
-                        handleClick={this.handleClick}
-                        name="showText"
-                    />
+                {/*<div className={style['select']}>*/}
+                    {/*<MySelect*/}
+                        {/*value={this.state.showText}*/}
+                        {/*options={this.state.options}*/}
+                        {/*handleClick={this.handleClick}*/}
+                        {/*name="showText"*/}
+                    {/*/>*/}
+                {/*</div>*/}
+                <div id="xianyuan">
+
                 </div>
             </div>
         )

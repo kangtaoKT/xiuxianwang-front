@@ -14,7 +14,7 @@ const Home = () => (
     </div>
     <ul className="left">
       <li className="left-bar"><Link to="/xianyuan">仙缘觅踪</Link></li>
-      <li className="left-bar">初入仙门</li>
+      <li className="left-bar"><Link to="/churu">初入仙门</Link></li>
       <li className="left-bar">仙道学习</li>
     </ul>
     <ul className="right">
