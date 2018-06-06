@@ -6,9 +6,9 @@
   line-height: 32px;
   text-indent: .3rem;
   color: #373e4e;
-  background-color: #c9d2db;
+  background-color: #fff;
   border: 1px solid #373e4e;
-  border-radius: 16px;
+  border-radius: 3px;
   cursor: pointer;
   outline: none;
   -moz-box-sizing: content-box!important;
@@ -54,9 +54,10 @@
 .select-content {
   position: absolute;
   left: -1px;
-  top: 35px;
+  top: 32px;
   width: 150px;
   border: 1px solid #373e4e;
+  border-radius: 3px;
   background-color: #c9d2db;
   z-index: 999;
   opacity: 1;
