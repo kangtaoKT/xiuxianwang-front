@@ -7,7 +7,11 @@ export default class ChuRuXianMen extends Component {
     super();
     this.state = {
       showText:'请选择',
-      options: [{label: '请选择', value: '请选择'}]
+      options: [
+        {label: '请选择', value: '请选择'},
+        {label: 'one', value: 'one'},
+        {label: 'two', value: 'two'}
+      ]
     }
   }
   handleClick = (obj,name) => {
@@ -19,7 +23,7 @@ export default class ChuRuXianMen extends Component {
   };
   render() {
     return (
-      <div>
+      <div style={{padding: '50px'}}>
         <MySelect
           value={this.state.showText}
           options={this.state.options}
