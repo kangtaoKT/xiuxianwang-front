@@ -26,3 +26,15 @@ circle {
   fill: none;
   stroke-width: 2.5px;
 }
+
+.linetext {
+  font-size: 12px ;
+  font-family: SimSun;
+  fill:#0000FF;
+  fill-opacity:0.0;
+}
+
+.svg-container {
+  width: 100%;
+  height: calc( 100% - 24px );
+}
