@@ -18,8 +18,8 @@ const Home = () => (
       <li className="left-bar"><Link to="/xiandao">仙道学习</Link></li>
     </ul>
     <ul className="right">
-      <li className="right-bar">道友交流</li>
-      <li className="right-bar">道友心得</li>
+      <li className="right-bar"><Link to="/daoyou">道友交流</Link></li>
+      <li className="right-bar"><Link to="/dyxd">道友心得</Link></li>
       <li className="right-bar">道友图书馆</li>
     </ul>
   </div>

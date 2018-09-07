@@ -9,6 +9,8 @@ import Find from '../containers/find/homePage/inde'
 import XianYuan from '../containers/xianyuanmizhong'
 import ChuRu from '../containers/chuRuXianMen'
 import XianDao from '../containers/xianDaoXueXi'
+import DaoYou from '../containers/daoyoujiaoliu'
+import DYXD from '../containers/daoyouxindei'
 
 class Slider extends React.Component {
   constructor(props) {
@@ -33,6 +35,8 @@ const R = () => (
       <Route path="/xianyuan" component={XianYuan} />
       <Route path="/churu" component={ChuRu} />
       <Route path="/xiandao" component={XianDao} />
+      <Route path="/daoyou" component={DaoYou} />
+      <Route path="/dyxd" component={DYXD} />
     </Slider>
   </HashRouter>
 )
