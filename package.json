@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "history": "^4.7.2",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.13",
     "pixi.js": "^4.8.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
